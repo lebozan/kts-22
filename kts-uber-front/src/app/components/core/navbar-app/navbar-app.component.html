@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [opened]="true" *ngIf="currentUser.hasOwnProperty('role')">
+    <mat-nav-list *ngIf="currentUser.role[0].authority === 'ROLE_USER'">
+      <a mat-list-item routerLink="/user/details">Account details</a>
+      <a mat-list-item routerLink="/user/subs">My subscriptions</a>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="currentUser.role[0].authority === 'ROLE_ADMIN'">
+      <a mat-list-item routerLink="cultural-offer-types">Cultural offer types</a>
+      <a mat-list-item routerLink="cultural-offer-subtypes">Cultural offer subtypes</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

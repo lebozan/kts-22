@@ -20,7 +20,7 @@ public class Directions {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+    private Double latitude, longitude, lengthInKm;
 
 
 }

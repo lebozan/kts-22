@@ -36,7 +36,7 @@ public class Ride {
     private List<Directions> directionsList;
 
     @Column
-    private Integer approximateDuration;
+    private Long approximateDuration;
 
     @OneToMany
     @JoinTable(name = "ride_review",

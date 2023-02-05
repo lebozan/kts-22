@@ -65,6 +65,7 @@ public class DriverService {
         return driverRepository.save(newDriver);
     }
 
+
     public Page<Driver> getDriversPage(int page, int size) {
         return driverRepository.findAll(PageRequest.of(page, size));
     }

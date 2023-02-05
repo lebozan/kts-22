@@ -1,0 +1,29 @@
+.loginForm {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color:lightgray;
+  color: black;
+
+  border-radius: 18px;
+
+  padding: 18px;
+}
+@media (max-width: 350px) {
+  .myForm {
+    min-width: 90%;
+  }
+}
+
+mat-form-field {
+  margin-right: 80px;
+  width: 200px;
+}
+
+#toast-container > div {
+  opacity:1;
+}

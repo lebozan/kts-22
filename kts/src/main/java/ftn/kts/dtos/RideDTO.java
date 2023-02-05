@@ -13,9 +13,9 @@ import java.util.List;
 public class RideDTO {
 
     private List<LocationDTO> locations;
-
     private List<PassengerShortDTO> passengers;
-
+    private double distanceInKm;
+    private double timeInMinutes;
     private String vehicleType;
     private Date scheduledTime;
     private boolean petTransport, babyTransport;

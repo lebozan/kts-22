@@ -76,6 +76,20 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.graphhopper/graphhopper-core -->
+		<dependency>
+			<groupId>com.graphhopper</groupId>
+			<artifactId>graphhopper-core</artifactId>
+			<version>6.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.graphhopper/directions-api-client-hc -->
+		<dependency>
+			<groupId>com.graphhopper</groupId>
+			<artifactId>directions-api-client-hc</artifactId>
+			<version>6.2</version>
+		</dependency>
+
 
 	</dependencies>
 
